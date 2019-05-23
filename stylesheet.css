@@ -1,25 +1,43 @@
+html, html a {
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+    -webkit-font-smoothing: antialiased;
+    -webkit-filter: blur(0.000001px);
+}
 body{
     margin: 0px;
-    background-color: rgb(248, 244, 244);
+    background-color: rgb(236, 232, 232);
+}
+a, p, li, h1, h2, h3, h4{
+    font-family: 'Comfortaa';
 }
 h1{
-    font-size: 4vw;
+    font-size: 3.7vw;
 }
 p{
     font-size: 1.5vw;
 }
+a{
+    text-decoration: none;
+    color: rgb(27, 27, 27);
 
+    border-bottom-color: rgb(49, 178, 218);
+    border-bottom: solid;
+    border-bottom-width: 0px;
+}
+a:hover{
+    color: rgb(49, 178, 218);
+}
 /*Header */
 #header{
     height: 5vw;
     width: 100%;
-    overflow: hidden;
+    overflow: overlay;
     flex-direction: row;
     display: flex;
 
-    border-bottom: solid;
-    border-bottom-color: black;
-    border-bottom-width: 1px;
+    box-shadow: 0 4px 8px 0 rgb(212, 208, 208);
+    background-color: rgb(212, 208, 208);
+    
 }
 #company-logo{
     margin-left: 10%;
@@ -42,7 +60,8 @@ p{
 /*Middle section [picture and introductory text]*/
 #middle-background{
     width: 100%;
-    height: 41vw;    
+    height: 41vw;  
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.473), 0 10px 20px rgba(0, 0, 0, 0.2);  
 }
 #middle-text{
     position: absolute;
@@ -52,6 +71,7 @@ p{
 }
 #middle-text h1, p{
     color: white;
+    opacity: 0;
 }
 #middle-background img{
     width: 100%;
@@ -66,24 +86,26 @@ p{
 }
 #pakutavad-teenused-text{
     margin-top: 5%;
-    margin-left: 27%;
+    margin-left: 28%;
     margin-right: 26%;
     
+
     border-top: solid;
     border-top-width: 1px;
-    border-top-color: grey;
+    border-top-color: rgb(200, 200, 200);
 }
 #pakutavad-teenused p{
-    color: black;
+    color: rgb(27, 27, 27);
+    opacity: 1;
 }
-.teenus-img img{
+.indexpage-teenus-img img{
     width: 20vw;
 }
-.teenus-img{
+.indexpage-teenus-img{
     margin-top: 10%;
     margin-left: 20%;
 }
-.teenus-text{
+.indexpage-teenus-text{
     margin-left: 25%;
 }
 /*Footer*/
@@ -91,8 +113,8 @@ p{
 #footer{
     flex-direction: row;
     display: flex;
-    
-    background-color: rgb(29, 29, 29);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 20px rgba(0, 0, 0, 0.2);
+    background-color: rgb(31, 30, 30);
 }
 #footer-text{
     margin-left: 8%;
@@ -100,6 +122,7 @@ p{
 
 #footer p{
     font-size: 1.1vw;
+    opacity: 1;
 }
 #footer h4{
     font-size: 1.2vw;
@@ -111,4 +134,123 @@ p{
 #footer-map{
     margin-left: 30%;
     margin-top: 1%;
+}
+
+
+/*teenused subpage {teenused.html}*/
+#teenused-middle{
+    display: flex;
+    flex-direction: row;
+}
+#teenused-list{
+    border-right: solid;
+    border-right-color: rgb(200, 200, 200);
+    border-right-width: 1px;
+    
+    margin-left: 8%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+#teenused-list-text{
+    width: 20vw;
+}
+#teenused-list-text ul{
+    list-style-type: none;
+}
+#teenused-list-text li{
+    font-size: 1.4vw;
+    margin-top: 1vw;
+}
+#teenused-list-text li:hover{
+    cursor: pointer;
+    color: rgb(49, 178, 218);
+}
+#teenused-list-text h2{
+    margin-bottom: 20%;
+    margin-left: 15%;
+    margin-right: 1%;
+    color: rgb(27, 27, 27);
+
+}
+#teenused-description p{
+    color: rgb(27, 27, 27);
+    opacity: 1;
+    margin-top: 15%;
+    margin-left: 12%;
+    margin-right: 15%;
+}
+
+/*Galerii [galerii.html]*/
+#galerii{
+    margin-right: 17%;
+    margin-left: 16%;
+    margin-top: 3%;
+    border: solid;
+    border-width: 1px;
+    border-radius: 2%;
+    border-color: rgb(200, 200, 200); 
+}
+.galerii-row{
+    display: flex;
+    flex-direction: row;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    margin-top: 1%;
+}
+.galerii-img{
+    margin-right: 3%;
+}
+.galerii-img img{
+    width: 20vw;
+    border-radius: 4%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 20px rgba(0, 0, 0, 0.2);
+}
+
+#modal{
+    display: none;
+    background-color: rgba(0, 0, 0, 0.96);
+    overflow: auto;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+}
+.close-cursor{
+    color: white;
+    font-size: 6vw;
+    font-weight: bold;
+    margin-right: 2%;
+    cursor: pointer;
+    position: absolute;
+    top: 1vw;
+    right: 1vw;
+}
+.modal-content-img{
+    margin-top: 5%;
+    margin-left: 14%;
+    width: 70vw;
+    height: 80vh;
+}
+#modal-left-arrow{
+    color: white;
+    float: left;
+    font-size: 8vw;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 40vh;
+    left: 3vw;
+}
+#modal{
+    display: none;
+    flex-direction: row;
+}
+#modal-right-arrow{
+    color: white;
+    font-size: 8vw;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    right: 3vw;
+    top: 40vh;
 }

@@ -1,0 +1,89 @@
+<!doctype html>
+
+<html>
+    <head>
+        <title>Fast Bear Fabrications</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+    </head>
+
+    <body>
+        <div id="header">
+            <div id="company-logo">
+                <img src="Images/601px-Temporary_plate.svg_.png" alt="Logo">
+            </div>
+
+            <div id="navigation-bar">
+                <a href="index.html" class="hover-class">Avaleht</a>
+                <a href="galerii.html" class="hover-class">Tehtud tööd</a>
+                <a href="teenused.html" class="hover-class">Teenused</a>
+                <a href="kontakt.html" class="hover-class">Kontakt</a>
+            </div>
+
+        </div>
+
+        <div id="galerii">
+            <div class="galerii-row">
+                <div class="galerii-img">
+                    <img onclick=expandPic(0); src="Images/tempgalleryphoto.jpeg">
+                </div>
+                <div class="galerii-img">
+                    <img onclick=expandPic(1); src="Images/tempgalleryphoto.jpeg">
+                </div>
+                <div class="galerii-img">
+                    <img onclick=expandPic(2); src="Images/maps1.jpg">
+                </div>
+            </div>
+
+            <div class="galerii-row">
+                <div class="galerii-img">
+                    <img onclick=expandPic(3); src="Images/tempgalleryphoto.jpeg">
+                </div>
+                <div class="galerii-img">
+                    <img onclick=expandPic(4); src="Images/tempgalleryphoto.jpeg">
+                </div>
+                <div class="galerii-img">
+                    <img onclick=expandPic(5); src="Images/tempgalleryphoto.jpeg">
+                </div>
+            </div>
+
+            <div class="galerii-row">
+                <div class="galerii-img">
+                    <img onclick=expandPic(6); src="Images/tempgalleryphoto.jpeg">
+                </div>
+                <div class="galerii-img">
+                    <img onclick=expandPic(7); src="Images/tempgalleryphoto.jpeg">
+                </div>
+                <div class="galerii-img">
+                    <img onclick=expandPic(8); src="Images/tempgalleryphoto.jpeg">
+                </div>
+            </div>
+        </div>
+
+
+        <div id="footer">
+            <div id="footer-text">
+                <h4>KONTAKT</h4>
+                <p>Aadress, Aadress Aadress</p>
+                <p>Tel. nr 57283049</p>
+                <p>E-mail@email.com</p>
+                <p>IBAN EE4622002210305923312</p>
+            </div>
+    
+            
+        </div>
+
+        <div id="modal">
+            <div onclick="prevPicture()" id="modal-left-arrow">&larr;</div>
+            <div id="modal-content"></div>
+            <div onclick="nextPicture()" id="modal-right-arrow">&rarr;</div>
+            
+            <div id="closeButton">
+                <span onclick="closeModal()" class="close-cursor">&times;</span>
+            </div>
+        </div>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>

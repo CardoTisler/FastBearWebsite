@@ -1,0 +1,19 @@
+1) Pealehe tutvustav lühitekst, 3 lauset ntx.
+
+2) Pakutavad teenused[3] - pildid ja ühelauselised(?) kirjeldused
+    KEEVITAMINE, CUSTOM DETAILID, METALLITÖÖTLEMINE
+
+3) Kontaktandmed
+    Aadress - tel nr - email - IBAN(?)
+
+4) Tehtud tööd (Galerii), pilte - min. 9
+
+5) Teenused, pikemad kirjeldused pakutavatest teenustest, kuni 6 lauset(?)
+    Keevitus
+    Metallitöötlus
+    Custom detailid
+    Detailide töötlemine
+
+    jne. nii palju kui vaja
+
+6) Firmalogo, veebilehel vasakus nurgas.
