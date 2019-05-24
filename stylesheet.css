@@ -29,12 +29,12 @@ a:hover{
 }
 /*Header */
 #header{
-    height: 5vw;
+    height: 5.2vw;
     width: 100%;
-    overflow: overlay;
+    overflow: hidden;
     flex-direction: row;
     display: flex;
-
+    background-image: linear-gradient(rgb(24, 23, 23), rgba(218, 212, 212, 0.103));
     box-shadow: 0 4px 8px 0 rgb(212, 208, 208);
     background-color: rgb(212, 208, 208);
     
