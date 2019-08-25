@@ -31,11 +31,13 @@ a:hover{
 /*Header */
 #header{
     height: 5.2vw;
+    position: relative;
     width: 100%;
     flex-direction: row;
     display: flex;
-    background-image: linear-gradient(rgba(11, 36, 49, 0.699), rgb(236, 232, 232));
-    box-shadow: 0 4px 8px 0 rgba(212, 208, 208, 0.5);
+    background-image: linear-gradient(rgba(11, 36, 49, 0.699), rgb(236, 232, 232, 0.5));
+    
+    box-shadow: 0 6px 10px 1px rgba(35, 34, 34, 0.9);
     
     
 }
@@ -58,6 +60,7 @@ a:hover{
 }
 
 /*Middle section [picture and introductory text]*/
+
 #middle-background{
     width: 100%;
     height: 41vw;  
@@ -270,4 +273,16 @@ a:hover{
     position: absolute;
     right: 3vw;
     top: 40vh;
+}
+
+/* Kontakt page */
+#kontakt-page-middle{
+    display: flex;
+    flex-direction: row;
+}
+#contact-form-div{
+    order: 0;
+}
+#gmaps-api-div{
+    order: 1;
 }

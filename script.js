@@ -94,6 +94,6 @@ $(document).ready(function(){
 $(document).ready(function(){
     $("#middle-text p").animate({
         "opacity" : "1"
-    }, 4000)
+    }, 3000)
 });
 

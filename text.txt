@@ -1,4 +1,4 @@
-1) Pealehe tutvustav lühitekst, 3 lauset ntx.
+1) Pealehe tutvustav lühitekst, 3-4 lauset ntx.
 
 2) Pakutavad teenused[3] - pildid ja ühelauselised(?) kirjeldused
     KEEVITAMINE, CUSTOM DETAILID, METALLITÖÖTLEMINE
@@ -16,4 +16,3 @@
 
     jne. nii palju kui vaja
 
-6) Firmalogo, veebilehel vasakus nurgas.
